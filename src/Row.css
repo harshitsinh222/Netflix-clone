@@ -1,0 +1,42 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  /* adding scroll bar to x-axis and to care that only row moves with the cursor instead of whole web page */
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+/* to hide the scrollbar created above */
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+
+   /* for smooth transition on hover or anything i.e., a little delay */
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  /* for zooming a little bit while hovering */
+  transform: scale(1.08);
+}
+
+/* for netflix originals */
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row__posterLarge:hover {
+   /* for zooming a little bit while hovering */
+  transform: scale(1.09);
+}
