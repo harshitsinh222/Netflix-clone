@@ -25,7 +25,7 @@ HTML - CSS - JS - React - NPM - Git - Firebase
 
 Although my web app looks and feels like Netflix, it functions differently. Since I can't create a database with full movies of every title, I decided to play trailers of the movies instead. For this reason I'm using the react-youtube and movie-trailer libries.
 
-With the data I fetch from TMDB, I populate my react components with relevant information, and let movie-trailer find the youtube path, and react-youtube takes that path and creates a Youtube iframe within the app once a poster is clicked.
+With the data I fetch from TMDB, I populate my react components with relevant information, and let movie-trailer find the youtube path, and react-youtube takes that path and creates a Youtube div below the row once a poster is clicked.
 
 Finally I've added responsive styling to keep the design experience smooth on various devices.
 
